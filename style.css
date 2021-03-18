@@ -1,0 +1,326 @@
+#button{
+  display: inline-block;
+  background-color:brown;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .3s;
+  visibility:5s;
+  opacity: 0;
+  z-index: 1000;
+  
+}
+
+#btnup{
+  font-weight: bolder;
+  color: white;
+  font-size: medium;
+  /* text-align: center;
+  align-items: center; */
+}
+
+/* #button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+} */
+
+#button:hover{
+  cursor: pointer;
+  background-color: #333;
+
+}
+
+#button:active{
+  background-color: #555;
+}
+
+#button.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.moment{
+   margin-top:10%;
+}
+.moment h2{
+    color:brown;
+    font-weight: bolder;
+}
+
+
+
+#topbg{
+background-image: url("../images/mainbg.jpg");
+background-position: center;
+background-size: cover;
+padding-bottom: 10%;
+}
+
+#topbtn{
+  color: black;
+  
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.644);
+ 
+
+}
+
+#topTxt{
+  text-decoration: none;
+}
+
+
+#txt{
+  font-weight: bolder;
+  color: white;
+ text-align: center;
+ margin-top: 5%;
+ margin-top: 10%;
+
+  
+}
+
+#aboutUs{
+  margin-top: 4%;
+ padding-top: 3%;
+ padding-bottom: 3%;
+ background-color: #a63e00;
+color: black;
+margin-bottom: 4%;
+
+      }
+      
+#aboutUs h2{
+  text-transform: uppercase;
+  font-weight: normal;
+  color:black;
+        }
+
+.img-block{
+      background-image: url("../images/roof.jpeg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      font-weight: bolder;
+       padding-top: 5%;
+       padding-bottom: 5%;
+  }
+
+
+  #btn{
+    width: 15%;
+    height: 8vh;
+    background-color: #a63e00;
+    color: black;
+    border: 0 transparent solid;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width:768px)
+{
+#btn{
+  width:130px;
+  height: 45px;
+}}
+
+.section-header{
+  
+  color: brown;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.article-head{
+   color: brown;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.project-item {
+  margin-bottom: 40px;
+}
+
+.project-item .project-detail h2 {
+  font-size: 18px;
+  font-weight: normal;
+  
+}
+
+.project-item:hover .overlay-b {
+  opacity: 0.7;
+}
+
+ .picture-thumb {
+  position: relative;
+}
+
+
+.picture-thumb img {
+  width: 100%;
+}
+
+
+.overlay-b {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  left: 0;
+}
+
+.overlay-b .overlay-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-b .overlay-inner a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+  border: 1px solid #d5d5d5;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+}
+
+
+.overlay-b .overlay-inner a:hover  {
+  color: brown;
+  border-color: brown;
+}
+  
+
+
+
+.section-heading h2 {
+  color: brown;
+  margin-bottom: 4%; 
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+iframe{
+  width: 100%;
+  height: 350px;
+}
+
+
+
+#cellMails{
+  padding-top: 3%;
+        }
+
+.phone{
+
+  border-radius: 5px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  background-color:  #a63e00;
+  color: white; 
+  margin-bottom: 5%;
+}
+.phone span{
+  color: black;
+}
+
+.message{
+ 
+  border-radius: 5px;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  background-color:  #a63e00;
+  color: white; 
+  margin-bottom: 5%;
+  
+}
+
+
+#cellMails .phone h4,
+#cellMails .message h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+}
+
+ .card{
+   margin-top:2rem;
+  
+}
+.card:hover{
+  box-shadow: 2px 1px 4px 6px rgba(0, 0, 0, 0.4) ;
+}
+
+#prod-btn{
+  background-color:brown;
+}
+
+.navi-keys{
+  margin-top: 3rem;
+  text-align: center;
+  color: black;
+}
+.navi-keys a{
+  color: black;
+}
+.navi-keys:hover{
+  color: brown;
+}
+
+.navi-keys a:hover{
+  color: brown;
+}
+
+.par{
+  padding-top: 3rem;
+  margin-left: 2rem;
+}
+
+.Fhead{
+  margin-left: 2rem;
+}
+
+.Fhead h5{
+  font-weight: bolder;
+}
+
+
+footer p{
+   text-align: center;
+   color: white;
+      }
+footer {
+  background-color:  #a63e00;
+  height: 3vh;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+}
