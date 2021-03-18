@@ -1,3 +1,54 @@
+#button{
+  display: inline-block;
+  background-color:brown;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .3s;
+  visibility:5s;
+  opacity: 0;
+  z-index: 1000;
+  
+}
+
+#btnup{
+  font-weight: bolder;
+  color: white;
+  font-size: medium;
+  /* text-align: center;
+  align-items: center; */
+}
+
+/* #button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+} */
+
+#button:hover{
+  cursor: pointer;
+  background-color: #333;
+
+}
+
+#button:active{
+  background-color: #555;
+}
+
+#button.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 .moment{
    margin-top:10%;
 }
@@ -13,8 +64,7 @@ background-image: url("../images/mainbg.jpg");
 background-position: center;
 background-size: cover;
 padding-bottom: 10%;
-     }
-
+}
 
 #topbtn{
   color: black;
@@ -73,17 +123,22 @@ margin-bottom: 4%;
   }
 
 
-  .overlay-b {
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    bottom: 0;
-    left: 0;
-  }
+  #btn{
+    width: 15%;
+    height: 8vh;
+    background-color: #a63e00;
+    color: black;
+    border: 0 transparent solid;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width:768px)
+{
+#btn{
+  width:130px;
+  height: 45px;
+}}
 
 .section-header{
   
@@ -94,56 +149,46 @@ margin-bottom: 4%;
   font-weight: normal;
 }
 
+.article-head{
+   color: brown;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
 
 .project-item {
-  overflow: hidden;
   margin-bottom: 40px;
 }
 
 .project-item .project-detail h2 {
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 10px 0;
-  display: block;
+  
 }
-.project-item .project-detail h2 a {
-  color: #2c2c2c;
-}
-.project-item .project-detail h2 a:hover {
-  color: brown;
-}
+
 .project-item:hover .overlay-b {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0.7;
 }
 
  .picture-thumb {
-  overflow: hidden;
   position: relative;
-  /* -webkit-backface-visibility: hidden; 
-  
-   backface-visibility: hidden; */
-} 
+}
+
+
 .picture-thumb img {
   width: 100%;
 }
 
 
 .overlay-b {
-  
-  visibility: hidden;
-  /* overflow: hidden; */
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.74);
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  /* bottom: 0;
-  left: 0; */
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  left: 0;
 }
-
 
 .overlay-b .overlay-inner {
   position: relative;
@@ -160,26 +205,30 @@ margin-bottom: 4%;
   border: 1px solid #d5d5d5;
   width: 36px;
   height: 36px;
-  /* display: block; */
   text-align: center;
   line-height: 36px;
   color: white;
 }
+
+
 .overlay-b .overlay-inner a:hover  {
   color: brown;
   border-color: brown;
 }
-
-
+  
 
 
 
 .section-heading h2 {
   color: brown;
-  /* margin-top: 60px;*/
   margin-bottom: 4%; 
   text-transform: uppercase;
   font-weight: normal;
+}
+
+iframe{
+  width: 100%;
+  height: 350px;
 }
 
 
@@ -196,15 +245,9 @@ margin-bottom: 4%;
   background-color:  #a63e00;
   color: white; 
   margin-bottom: 5%;
-
-  /* text-align: center;
- 
-  font-size: 24px; 
-  display: inline-block;
-  margin-top: -35px;
-  margin-left: auto;
-  margin-right: auto;  */
-  
+}
+.phone span{
+  color: black;
 }
 
 .message{
@@ -218,17 +261,6 @@ margin-bottom: 4%;
   
 }
 
-.icon{
-  /* 
-background-color: black;
- border-radius: 50%; 
- text-align: center; 
- width: auto; 
- display: inline-block; 
- margin-top:-35px;
- */
-} 
-
 
 #cellMails .phone h4,
 #cellMails .message h4 {
@@ -239,28 +271,56 @@ background-color: black;
   
 }
 
+ .card{
+   margin-top:2rem;
+  
+}
+.card:hover{
+  box-shadow: 2px 1px 4px 6px rgba(0, 0, 0, 0.4) ;
+}
+
+#prod-btn{
+  background-color:brown;
+}
+
+.navi-keys{
+  margin-top: 3rem;
+  text-align: center;
+  color: black;
+}
+.navi-keys a{
+  color: black;
+}
+.navi-keys:hover{
+  color: brown;
+}
+
+.navi-keys a:hover{
+  color: brown;
+}
+
+.par{
+  padding-top: 3rem;
+  margin-left: 2rem;
+}
+
+.Fhead{
+  margin-left: 2rem;
+}
+
+.Fhead h5{
+  font-weight: bolder;
+}
 
 
+footer p{
+   text-align: center;
+   color: white;
+      }
+footer {
+  background-color:  #a63e00;
+  height: 3vh;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Chrome, Safari, Opera */
+}
