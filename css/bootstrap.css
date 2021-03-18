@@ -1711,6 +1711,10 @@ pre code {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.table-custom tr:nth-of-type(odd) {
+ background-color: rgba(165, 42, 42, 0.342)
+}
+
 .table-hover tbody tr:hover {
   color: #212529;
   background-color: rgba(0, 0, 0, 0.075);
