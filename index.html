@@ -4,6 +4,7 @@
     <title>Clay||Doc</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpeg" href="images/favicon.jpeg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
@@ -14,6 +15,8 @@
 <body>
 
   <!-- Navbar -->
+
+  <a id="button"><i class="fa fa-arrow-up" id="btnup"></i></a>
 
         <header>
         <div id="topbg">
@@ -77,7 +80,7 @@
                 <div class="col-md-6 col-sm-12">
                   <ul>
                     <li id="mid">For a complete list of our products please click <a href="">Product List</a> </li>
-                    <li>Click  <a href="">Brochure</a> to download our product brochure</li>
+                    <li>Click  <a target="_blank" href="Brochure.pdf">Brochure</a> to download our product brochure</li>
                   </ul>
                 </div>
                 
@@ -94,33 +97,40 @@
          
 
           <article id="product&Prices">
-        
 
-          </article>
+     
+              <div class="container">
+                <div class="article-head col-md-12">
+                  <h2>Products and prices</h2>
+              </div> 
+              <p>	 	 	 	 
+          We have a variety of products that is suitable for Decking Floor, Steps, Partition Walls, Load Bearing Walls, Finishing, Sun Breakers. Quality test of all our products are available for structural engineers and architects, below is the list of all our products with the current prices. Prices are subject to VAT and any other Government levies as applicable. Prices are subject to revision without notice. Dimensions tolerance +2%</p>
+     
+                 <a href="product.html"><button id="btn">Get Started</button></a>
+         </div> 
+         
+       </article>
 
       <!-- GALLERY -->
 
           <aside id="productGallery">
-            
-           <div class="gallery-top">
+             <div class="gallery-top">
               <div class="container">
                 <div class="row">
                   <div class="section-header col-md-12">
                       <h2>Our Products</h2>
                   </div> 
               </div> 
-              <div class="content">
-                <div class="inner-content">
                   <div class="row">
 
                       <!-- First GALLERY -->
                     <div class="col-md-4 project-item">
                       <div data-aos="fade-up">
                       <div class="picture-thumb">
-                        <img src="images/projects/project_1.jpg" alt="">
+                        <img src="images/project_1.jpg" alt="">
                         <div class="overlay-b">
                           <div class="overlay-inner">
-                            <a href="images/projects/project_1.jpg" > <i class="fa fa-expand"></i></a>
+                            <a href="images/project_1.jpg" > <i class="fa fa-expand"></i></a>
                           </div>
                       </div>
                       </div>
@@ -136,11 +146,11 @@
                     <div class="col-md-4 project-item">
                       <div data-aos="fade-up">
                       <div class="picture-thumb">
-                        <img src="images/projects/project_1.jpg" alt="">
+                        <img src="images/project_1.jpg" alt="">
                       
                         <div class="overlay-b">
                           <div class="overlay-inner">
-                              <a href="images/projects/project_1.jpg"> <i class="fa fa-expand"></i></a>
+                              <a href="images/project_1.jpg"> <i class="fa fa-expand"></i></a>
                           </div>
                       </div>
                       </div>
@@ -237,8 +247,6 @@
 
 
                   </div>
-                </div>
-              </div>
               </div>
            </div>
  
@@ -255,9 +263,9 @@
           <section id="aboutUs">
             <div class="container">
               <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
+               
           
-                </div>
+                
                 <div class="col-md-6 col-sm-12">
                   <div data-aos="zoom-in">
                   <img src="images/style.jpeg" class="img-thumbnail" alt="about img">
@@ -288,14 +296,19 @@
 
 
           <aside id="contactUs">
-            <div class="container">
-              <div class="row">
+            
                 <div class="section-heading col-md-12">
                   <h2>Contact Us</h2>
-                </div> 
+                </div>
+                   <div class="mapouter">
+                   <div class="gmap_canvas">
+                  <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Clay%20Industry%20(Nigeria)%20Limited%20Oregun%20Industrial%20Estate,%20P.%20O.%20Box%20319,%20Ikeja,%20Lagos.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                  <!-- <a href="https://kissanime-ws.com">kissanime</a><br><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:100%;}</style></div></div> -->
+                  <div class="container">
+                    <div class="row">
                 <div class="col-lg-6">
-
-                  <h3 style="margin-bottom:3%; font-weight: bold;" > Head Office </h3>
+                   <h3 style="margin-bottom:3%; font-weight: bold;" > Head Office </h3>
                   <h3>	
                     Clay Industry (Nigeria) Limited
                     Oregun Industrial Estate,
@@ -307,16 +320,16 @@
                 <div class="row">
                   <div class="col-lg-6">
                       <div class="phone">
-                    <i class ="fas fa-phone icon fa-1x"></i>
+                    <i class ="fas fa-phone icon fa-2x"></i>
                      
-                          <h4>Phone Numbers</h4>
+                          <h4 style="color: black;">Phone Numbers</h4>
                           <span>234-(0)8166225888<br> 234-803 333 5528</span>
                       </div>
                   </div>
                   <div class="col-lg-6">
                       <div class="message">
-                          <i class="fa fa-envelope"></i>
-                          <h4>Emails</h4>
+                          <i class="fa fa-envelope fa-2x"></i>
+                          <h4 style="color: black;">Emails</h4>
                           <span><a href="#" style="text-decoration: none; color: black;"> info@clayindustryng.com</a><br><a href="#" style="text-decoration: none; color:black;">sales@clayindustryng.com</a></span>
                       </div>
                   </div>
@@ -329,9 +342,15 @@
 
 
 
-         <!-- style="background-color: brown; width: 70px; text-align: center;
-         color: white; height: 70px; border-radius: 50%; font-size: 24px; line-height: 70px; display: inline-block;
-         margin-top: -35px; margin-left: auto; margin-right: auto;      -->
+
+         <footer>
+          <div class="col-md-12">
+          <div class="container">
+              <p>Copyright © 2021 Clay Industry Limited</p>
+          </div>
+        </div>
+        </footer>
+
        
     
    
@@ -341,7 +360,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
 
-      AOS.init();
+AOS.init();
 
        const text = 'Welcome To Our Website!'
       var index = 0;
@@ -359,7 +378,28 @@
           //this runs a function continiously at specified time intervals (miliseconds)
 
           setInterval(writeText, 200)
-      
+
+
+          var btn=$('#button');
+
+          $(window).scroll(function(){
+            if($(window).scrollTop()>100){
+              btn.addClass('show');
+            }
+          
+            else{
+              btn.removeClass('show');
+            }
+          });
+        
+
+         btn.on('click',function(e){
+           e.preventDefault();
+           $('html,body').animate({scrollTop:0}, '100');
+         });
+
+
+
   </script>
 </body>
 </html>
